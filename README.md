@@ -8,7 +8,7 @@ A comprehensive map of the diffusion model ecosystem — models, schedulers, pip
 
 ## Live Interactive Website
 
-**[→ Open Interactive Explorer ←](https://gaurav14cs17.github.io/Diffusers-Ecosystem/)**
+**[→ Open Interactive Explorer ←](https://gaurav14cs17.github.io/diffusers/)**
 
 Click any node to navigate through the hierarchy. Scroll to zoom, drag to pan.
 
@@ -16,6 +16,7 @@ Click any node to navigate through the hierarchy. Scroll to zoom, drag to pan.
 
 ## Table of Contents
 
+- [Dependency Graph](#dependency-graph)
 - [00 Foundations](#00-foundations)
 - [01 Models](#01-models)
 - [02 Schedulers](#02-schedulers)
@@ -29,6 +30,79 @@ Click any node to navigate through the hierarchy. Scroll to zoom, drag to pan.
 - [10 Training](#10-training)
 - [11 Utilities](#11-utilities)
 - [References (Continuously Updated)](#references-continuously-updated)
+
+---
+
+## Dependency Graph
+
+### Dependency Summary Table
+
+| Section | Depends On | Used By |
+|---------|-----------|---------|
+| **00 Foundations** | — (theoretical base) | Models, Schedulers, Guiders |
+| **01 Models** | Foundations, Utilities | Pipelines, Modular Pipelines, Loaders, Quantizers, Hooks, Training, Processing |
+| **02 Schedulers** | Foundations, Utilities | Pipelines, Modular Pipelines, Training |
+| **03 Guiders** | Foundations | Pipelines |
+| **04 Pipelines** | Models, Schedulers, Guiders, Processing, Utilities | Modular Pipelines, Loaders, Hooks |
+| **05 Modular Pipelines** | Pipelines, Models, Schedulers | — (top-level composition) |
+| **06 Loaders** | Models, Pipelines, Utilities | Quantizers, Training |
+| **07 Quantizers** | Models, Loaders, Utilities | — (applied to loaded models) |
+| **08 Hooks** | Models, Pipelines, Utilities | — (runtime modifiers) |
+| **09 Processing** | Models | Pipelines |
+| **10 Training** | Models, Schedulers, Loaders, Utilities | — (produces fine-tuned models) |
+| **11 Utilities** | — (infrastructure layer) | All sections |
+
+### Key Dependency Chains
+
+**Inference path** (how an image/video is generated):
+
+```
+                        +----------------+
+                        | 06 Loaders     |
+                        | (load weights) |
+                        +----------------+
+                                |
+                                v
++----------------+   +-----------------+   +-------------+   +---------------+   +--------+
+| 00 Foundations |   | 01 Models       |   | 04 Pipeline |   | 09 Processing |   | Output |
+|                |-->| + 02 Schedulers |-->|             |-->|               |-->|        |
+|                |   | + 03 Guiders    |   |             |   |               |   |        |
++----------------+   +-----------------+   +-------------+   +---------------+   +--------+
+                                                 |
+                                                 v
+                                         +--------------+
+                                         | 08 Hooks     |
+                                         | (offload,    |
+                                         | cache, attn) |
+                                         +--------------+
+```
+
+**Training path** (how a model is fine-tuned):
+
+```
++----------------+   +-----------------+   +--------------+   +--------------+
+| 00 Foundations |   | 01 Models       |   | 10 Training  |   | Fine-tuned   |
+|                |-->| + 02 Schedulers |-->| (DreamBooth, |-->| Model / LoRA |
+|                |   |                 |   | LoRA, DDPO)  |   |              |
++----------------+   +-----------------+   +--------------+   +--------------+
+                             ^                    ^
+                             |                    |
+                      +-------------+      +--------------+
+                      | 06 Loaders  |      | 11 Utilities |
+                      | (load base) |      | (Accelerate, |
+                      +-------------+      | mixed prec)  |
+                                           +--------------+
+```
+
+**Optimization path** (how inference is accelerated):
+
+```
++----------+     +---------------+     +---------------+     +-----------------+
+| 01 Model |     | 07 Quantizers |     | 08 Hooks      |     | 04 Pipeline     |
+| (loaded  |---->| (INT4, FP8,   |---->| (CPU offload, |---->| (torch.compile, |
+| weights) |     | GGUF, NF4)    |     | PAB, cache)   |     | SDPA, generate) |
++----------+     +---------------+     +---------------+     +-----------------+
+```
 
 ---
 
