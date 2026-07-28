@@ -8,7 +8,7 @@ A comprehensive map of the diffusion model ecosystem — models, schedulers, pip
 
 ## Live Interactive Website
 
-**[→ Open Interactive Explorer ←](https://gaurav14cs17.github.io/diffusers/)**
+**[→ Open Interactive Explorer ←](https://gaurav14cs17.github.io/Diffusers-Ecosystem/)**
 
 Click any node to navigate through the hierarchy. Scroll to zoom, drag to pan.
 
