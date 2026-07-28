@@ -18,6 +18,8 @@ export const treeData = {
             { name: "Variational Diffusion Models", id: "vdm", year: 2021, month: 7, url: "https://arxiv.org/abs/2107.00630" },
             { name: "Understanding Diffusion Objectives as the ELBO with Simple Data Augmentation", id: "elbo-diffusion", year: 2023, month: 3, url: "https://arxiv.org/abs/2303.00848" },
             { name: "Elucidating the Design Space of Diffusion-Based Generative Models (EDM)", id: "edm", year: 2022, month: 6, url: "https://arxiv.org/abs/2206.00364" },
+            { name: "Consistency Models", id: "consistency-models-theory", year: 2023, month: 3, url: "https://arxiv.org/abs/2303.01469" },
+            { name: "Denoising Diffusion Bridge Models (DDBM)", id: "ddbm", year: 2023, month: 9, url: "https://arxiv.org/abs/2309.16948" },
           ]
         },
         {
@@ -28,6 +30,7 @@ export const treeData = {
             { name: "Photorealistic Text-to-Image Diffusion Models (Imagen)", id: "imagen", year: 2022, month: 5, url: "https://arxiv.org/abs/2205.11487" },
             { name: "Hierarchical Text-Conditional Image Generation with CLIP Latents (DALL-E 2)", id: "dalle2", year: 2022, month: 4, url: "https://arxiv.org/abs/2204.06125" },
             { name: "GLIDE: Towards Photorealistic Image Generation and Editing", id: "glide", year: 2021, month: 12, url: "https://arxiv.org/abs/2112.10741" },
+            { name: "Imagen 2: Deep Language Understanding for Image Generation", id: "imagen2", year: 2023, month: 12, url: "https://deepmind.google/technologies/imagen-2/" },
           ]
         },
         {
@@ -39,6 +42,8 @@ export const treeData = {
             { name: "Conditional Flow Matching: Simulation-Free Dynamic Optimal Transport", id: "cfm", year: 2023, month: 2, url: "https://arxiv.org/abs/2302.00482" },
             { name: "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (SD3)", id: "sd3-theory", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
             { name: "Stochastic Interpolants: A Unifying Framework for Flows and Diffusions", id: "stochastic-interpolants", year: 2023, month: 3, url: "https://arxiv.org/abs/2303.08797" },
+            { name: "Flow Matching Guide and Code", id: "fm-guide", year: 2024, month: 12, url: "https://arxiv.org/abs/2412.06264" },
+            { name: "Exploring Diffusion and Flow Matching Under Generator Matching", id: "generator-matching", year: 2024, month: 12, url: "https://arxiv.org/abs/2412.11024" },
           ]
         },
         {
@@ -92,6 +97,9 @@ export const treeData = {
             { name: "Tiny AutoEncoder for Stable Diffusion (TAESD)", id: "taesd", year: 2023, url: "https://github.com/madebyollin/taesd" },
             { name: "Asymmetric VQGAN (Inpainting VAE)", id: "asymmetric-vqgan", year: 2022, month: 6, url: "https://arxiv.org/abs/2306.04632" },
             { name: "Consistency Decoder", id: "consistency-decoder", year: 2023, month: 11, url: "https://github.com/openai/consistencydecoder" },
+            { name: "AutoencoderKLLTXVideo (LTX Video VAE)", id: "autoencoder-ltx", year: 2024, month: 11, url: "https://arxiv.org/abs/2501.00103" },
+            { name: "AutoencoderKLMochi (Mochi Video VAE)", id: "autoencoder-mochi", year: 2024, month: 10, url: "https://github.com/genmoai/mochi" },
+            { name: "Step-Video-VAE (16x16 spatial + 8x temporal)", id: "step-video-vae", year: 2025, month: 2, url: "https://arxiv.org/abs/2502.10248" },
           ]
         },
         {
@@ -111,6 +119,12 @@ export const treeData = {
             { name: "Latte: Latent Diffusion Transformer for Videos", id: "latte", year: 2024, month: 1, url: "https://arxiv.org/abs/2401.03048" },
             { name: "SANA: Efficient High-Resolution Linear DiT with Efficient Attention", id: "sana", year: 2024, month: 10, url: "https://arxiv.org/abs/2410.10733" },
             { name: "Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT", id: "lumina-next", year: 2024, month: 6, url: "https://arxiv.org/abs/2406.18583" },
+            { name: "Improving Image Generation with Better Captions (DALL-E 3)", id: "dalle3", year: 2023, month: 10, url: "https://cdn.openai.com/papers/dall-e-3.pdf" },
+            { name: "Playground v2.5: Enhancing Aesthetic Quality in Text-to-Image", id: "playground-v25", year: 2024, month: 2, url: "https://arxiv.org/abs/2402.17245" },
+            { name: "Kolors: Photorealistic Text-to-Image Synthesis", id: "kolors", year: 2024, month: 7, url: "https://github.com/Kwai-Kolors/Kolors" },
+            { name: "Stable Cascade (Würstchen v3)", id: "stable-cascade", year: 2024, month: 2, url: "https://stability.ai/news/introducing-stable-cascade" },
+            { name: "SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute", id: "sana15", year: 2025, month: 1, url: "https://arxiv.org/abs/2501.18427" },
+            { name: "SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency Distillation", id: "sana-sprint", year: 2025, month: 3, url: "https://github.com/NVlabs/Sana" },
           ]
         },
         {
@@ -123,12 +137,21 @@ export const treeData = {
             { name: "AnimateDiff: Animate Your Personalized T2I Models", id: "animatediff-model", year: 2023, month: 7, url: "https://arxiv.org/abs/2307.04725" },
             { name: "Stable Video Diffusion (SVD)", id: "svd", year: 2023, month: 11, url: "https://arxiv.org/abs/2311.15127" },
             { name: "CogVideoX: Text-to-Video Diffusion with Expert Transformer", id: "cogvideox", year: 2024, month: 8, url: "https://arxiv.org/abs/2408.06072" },
-            { name: "Mochi 1: High-Fidelity Video Generation Model", id: "mochi", year: 2024, month: 10, url: "https://www.genmo.ai/blog/mochi-1" },
+            { name: "Mochi 1: High-Fidelity Video Generation Model", id: "mochi", year: 2024, month: 10, url: "https://github.com/genmoai/mochi" },
             { name: "HunyuanVideo: A Systematic Framework for Video Generation", id: "hunyuan-video", year: 2024, month: 12, url: "https://arxiv.org/abs/2412.03603" },
             { name: "LTX-Video: Realtime Video Latent Diffusion", id: "ltx-video", year: 2024, month: 11, url: "https://arxiv.org/abs/2501.00103" },
             { name: "Allegro: Open-Source Video Generation Model", id: "allegro", year: 2024, month: 10, url: "https://arxiv.org/abs/2410.15458" },
             { name: "Wan: Open and Advanced Large-Scale Video Generative Models", id: "wan-video", year: 2025, month: 3, url: "https://arxiv.org/abs/2503.20314" },
             { name: "Open-Sora: Democratizing Efficient Video Production", id: "open-sora", year: 2024, month: 3, url: "https://arxiv.org/abs/2412.00131" },
+            { name: "Step-Video-T2V: 30B Text-to-Video Foundation Model", id: "step-video", year: 2025, month: 2, url: "https://arxiv.org/abs/2502.10248" },
+            { name: "Step-Video-TI2V: Text-Driven Image-to-Video Generation", id: "step-video-ti2v", year: 2025, month: 3, url: "https://arxiv.org/abs/2503.11251" },
+            { name: "SkyReels-V2: Infinite-length Film Generative Model", id: "skyreels-v2", year: 2025, month: 4, url: "https://arxiv.org/abs/2504.13074" },
+            { name: "MAGI-1: Autoregressive Video Generation at Scale (24B)", id: "magi1", year: 2025, month: 5, url: "https://arxiv.org/abs/2505.13211" },
+            { name: "VACE: All-in-One Video Creation and Editing (Wan2.1)", id: "vace", year: 2025, month: 5, url: "https://arxiv.org/abs/2503.07598" },
+            { name: "SANA-Video: Efficient Video Generation with Linear DiT", id: "sana-video", year: 2025, month: 6, url: "https://github.com/NVlabs/Sana" },
+            { name: "SkyReels-V3: Unified Multimodal Condition Video Generation", id: "skyreels-v3", year: 2026, month: 1, url: "https://arxiv.org/abs/2601.17323" },
+            { name: "SkyReels-V4: Multi-modal Video-Audio Generation and Editing", id: "skyreels-v4", year: 2026, month: 2, url: "https://arxiv.org/abs/2602.21818" },
+            { name: "SANA-Video 2.0: Hybrid Linear Attention for Video Generation", id: "sana-video2", year: 2026, month: 7, url: "https://arxiv.org/abs/2607.21553" },
           ]
         },
         {
@@ -153,6 +176,9 @@ export const treeData = {
             { name: "BERT: Pre-training of Deep Bidirectional Transformers", id: "bert-encoder", year: 2018, month: 10, url: "https://arxiv.org/abs/1810.04805" },
             { name: "SigLIP: Sigmoid Loss for Language Image Pre-Training", id: "siglip", year: 2023, month: 3, url: "https://arxiv.org/abs/2303.15343" },
             { name: "Gemma: Open Models Based on Gemini Research (FLUX/SD3 T5)", id: "gemma-encoder", year: 2024, month: 2, url: "https://arxiv.org/abs/2403.08295" },
+            { name: "T5-XXL (4.7B encoder for SD3/FLUX)", id: "t5-xxl", year: 2019, month: 10, url: "https://arxiv.org/abs/1910.10683" },
+            { name: "ChatGLM (Bilingual encoder for HunyuanDiT/Kolors)", id: "chatglm-encoder", year: 2024, url: "https://github.com/THUDM/ChatGLM-6B" },
+            { name: "Qwen2.5 (Encoder for Wan Video)", id: "qwen25-encoder", year: 2024, url: "https://github.com/QwenLM/Qwen2.5" },
           ]
         },
         {
@@ -167,6 +193,10 @@ export const treeData = {
             { name: "FlashAttention-2: Faster Attention with Better Parallelism", id: "flash-attention-2", year: 2023, month: 7, url: "https://arxiv.org/abs/2307.08691" },
             { name: "xFormers: A Modular and Hackable Transformer Modelling Library", id: "xformers-lib", year: 2022, url: "https://github.com/facebookresearch/xformers" },
             { name: "Memory Efficient Attention (Rabe & Staats)", id: "memory-efficient-attn", year: 2021, month: 12, url: "https://arxiv.org/abs/2112.05682" },
+            { name: "FlashAttention-3: Fast and Accurate Attention with Asynchrony and Low-precision", id: "flash-attention-3", year: 2024, month: 7, url: "https://arxiv.org/abs/2407.08608" },
+            { name: "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration", id: "sage-attention", year: 2024, month: 10, url: "https://arxiv.org/abs/2410.02367" },
+            { name: "SageAttention2: Efficient Attention with Thorough Quantization", id: "sage-attention-2", year: 2024, month: 11, url: "https://arxiv.org/abs/2411.10958" },
+            { name: "SageAttention3: Microscaling FP4 Attention for Inference and 8-Bit Training", id: "sage-attention-3", year: 2025, month: 5, url: "https://arxiv.org/abs/2505.11594" },
           ]
         },
       ]
@@ -201,6 +231,7 @@ export const treeData = {
             { name: "DEISMultistepScheduler (Diffusion Exponential Integrator)", id: "deis", year: 2022, month: 4, url: "https://arxiv.org/abs/2204.13902" },
             { name: "SASolverScheduler (Stochastic Adams Solver)", id: "sa-solver", year: 2023, month: 9, url: "https://arxiv.org/abs/2309.05019" },
             { name: "DPM-Solver-v3 (Empirical Model Statistics)", id: "dpm-v3", year: 2023, month: 10, url: "https://arxiv.org/abs/2310.13268" },
+            { name: "Flow-DPM-Solver: Fast Solver for Flow Matching ODE", id: "flow-dpm-solver", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
           ]
         },
         {
@@ -227,6 +258,8 @@ export const treeData = {
             { name: "Stable Diffusion 3 Flow Matching Scheduler", id: "sd3-flow", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
             { name: "FLUX Flow Matching Scheduler", id: "flux-flow", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
             { name: "CosineDPMSolverMultistepScheduler (Cosine schedule for flow)", id: "cosine-dpm", year: 2024, url: "https://huggingface.co/docs/diffusers/api/schedulers/cosine_dpm" },
+            { name: "A-FloPS: Accelerating Diffusion via Adaptive Flow Path Sampler", id: "a-flops", year: 2025, month: 9, url: "https://arxiv.org/abs/2509.00036" },
+            { name: "PRECISE: SDE-Consistent Stochastic Sampling for Flow-Matching RL", id: "precise", year: 2025, url: "https://arxiv.org/abs/2605.23522" },
           ]
         },
         {
@@ -243,6 +276,9 @@ export const treeData = {
             { name: "Adversarial Diffusion Distillation (SDXL Turbo)", id: "add-turbo", year: 2023, month: 11, url: "https://arxiv.org/abs/2311.17042" },
             { name: "SDXL-Lightning: Progressive Adversarial Distillation", id: "sdxl-lightning", year: 2024, month: 2, url: "https://arxiv.org/abs/2402.13929" },
             { name: "DMD2: Improved Distribution Matching Distillation", id: "dmd2", year: 2024, month: 5, url: "https://arxiv.org/abs/2405.14867" },
+            { name: "Hyper-SD: Trajectory Segmented Consistency Model for Efficient Synthesis", id: "hyper-sd", year: 2024, month: 4, url: "https://arxiv.org/abs/2404.13686" },
+            { name: "AnyFlow: Any-Step Video Diffusion with On-Policy Flow Map Distillation", id: "anyflow", year: 2025, month: 5, url: "https://arxiv.org/abs/2605.13724" },
+            { name: "CACFM: Curvature-Adaptive Consistency Flow Matching via RL", id: "cacfm", year: 2026, month: 6, url: "https://arxiv.org/abs/2606.22394" },
           ]
         },
         {
@@ -256,6 +292,8 @@ export const treeData = {
             { name: "Sigmoid Beta Schedule", id: "sigmoid-beta", url: "https://huggingface.co/docs/diffusers/api/schedulers/overview" },
             { name: "v-prediction Parameterization", id: "v-prediction", year: 2022, month: 2, url: "https://arxiv.org/abs/2202.00512" },
             { name: "Zero Terminal SNR", id: "zero-snr", year: 2023, month: 5, url: "https://arxiv.org/abs/2305.08891" },
+            { name: "Logit-Normal Sampling (SD3 timestep distribution)", id: "logit-normal", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
+            { name: "Shift Schedule (Dynamic timestep shifting for resolution)", id: "shift-schedule", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
           ]
         },
       ]
@@ -303,6 +341,8 @@ export const treeData = {
             { name: "Negative Prompting (Unconditional Guidance Subtraction)", id: "negative-prompt", url: "https://huggingface.co/docs/diffusers/using-diffusers/weighted_prompts" },
             { name: "Multi-Prompt / Prompt Weighting", id: "prompt-weighting", url: "https://huggingface.co/docs/diffusers/using-diffusers/weighted_prompts" },
             { name: "Universal Guidance for Diffusion Models", id: "universal-guidance", year: 2023, month: 2, url: "https://arxiv.org/abs/2302.07121" },
+            { name: "Guidance Distillation (FLUX.1-schnell CFG-free)", id: "guidance-distill", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "DIFT: Diffusion Features for Semantic Correspondence", id: "dift", year: 2023, month: 6, url: "https://arxiv.org/abs/2306.03881" },
           ]
         }
       ]
@@ -329,6 +369,9 @@ export const treeData = {
             { name: "SanaPipeline (SANA)", id: "sana-pipeline", year: 2024, month: 10, url: "https://arxiv.org/abs/2410.10733" },
             { name: "LuminaText2ImgPipeline", id: "lumina-pipeline", year: 2024, month: 5, url: "https://arxiv.org/abs/2405.05945" },
             { name: "UnCLIPPipeline", id: "unclip-pipeline", year: 2022, month: 4, url: "https://arxiv.org/abs/2204.06125" },
+            { name: "DALL-E 3: Improving Image Generation with Better Captions", id: "dalle3-pipeline", year: 2023, month: 10, url: "https://cdn.openai.com/papers/dall-e-3.pdf" },
+            { name: "Playground v2.5 (PlaygroundPipeline)", id: "playground-pipeline", year: 2024, month: 2, url: "https://arxiv.org/abs/2402.17245" },
+            { name: "SANA 1.5: Efficient Scaling in Linear DiT", id: "sana15-pipeline", year: 2025, month: 1, url: "https://arxiv.org/abs/2501.18427" },
           ]
         },
         {
@@ -344,6 +387,9 @@ export const treeData = {
             { name: "DiffEdit: Diffusion-based Semantic Image Editing with Mask Guidance", id: "diffedit", year: 2022, month: 10, url: "https://arxiv.org/abs/2210.11427" },
             { name: "Stable Diffusion Depth2Img Pipeline", id: "depth2img", year: 2022, url: "https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/depth2img" },
             { name: "Stable Diffusion Upscale Pipeline (4x Super-Resolution)", id: "sd-upscale", year: 2022, url: "https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/upscale" },
+            { name: "FluxImg2ImgPipeline", id: "flux-img2img", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "StableDiffusion3Img2ImgPipeline", id: "sd3-img2img", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
+            { name: "Kolors Img2Img Pipeline", id: "kolors-img2img", year: 2024, month: 7, url: "https://github.com/Kwai-Kolors/Kolors" },
           ]
         },
         {
@@ -357,6 +403,9 @@ export const treeData = {
             { name: "Blended Diffusion for Text-driven Editing of Natural Images", id: "blended-diffusion", year: 2021, month: 11, url: "https://arxiv.org/abs/2111.14818" },
             { name: "Blended Latent Diffusion", id: "blended-latent", year: 2022, month: 6, url: "https://arxiv.org/abs/2206.02779" },
             { name: "HD-Painter: High-Resolution and Prompt-Faithful Text-Guided Image Inpainting", id: "hd-painter", year: 2023, month: 12, url: "https://arxiv.org/abs/2312.14091" },
+            { name: "FluxFillPipeline (FLUX Fill for inpainting/outpainting)", id: "flux-fill", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "FluxInpaintPipeline", id: "flux-inpaint", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "StableDiffusion3InpaintPipeline", id: "sd3-inpaint", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
           ]
         },
         {
@@ -369,12 +418,19 @@ export const treeData = {
             { name: "CogVideoXPipeline", id: "cogvideox-pipeline", year: 2024, month: 8, url: "https://arxiv.org/abs/2408.06072" },
             { name: "CogVideoXImageToVideoPipeline", id: "cogvideox-i2v", year: 2024, month: 8, url: "https://arxiv.org/abs/2408.06072" },
             { name: "HunyuanVideoPipeline", id: "hunyuan-video-pipeline", year: 2024, month: 12, url: "https://arxiv.org/abs/2412.03603" },
-            { name: "MochiPipeline", id: "mochi-pipeline", year: 2024, month: 10, url: "https://www.genmo.ai/blog/mochi-1" },
+            { name: "MochiPipeline", id: "mochi-pipeline", year: 2024, month: 10, url: "https://github.com/genmoai/mochi" },
             { name: "LTXPipeline / LTXImageToVideoPipeline", id: "ltx-video-pipeline", year: 2024, month: 11, url: "https://arxiv.org/abs/2501.00103" },
             { name: "WanPipeline (Text/Image-to-Video)", id: "wan-pipeline", year: 2025, month: 3, url: "https://arxiv.org/abs/2503.20314" },
             { name: "AllegroPipeline", id: "allegro-pipeline", year: 2024, month: 10, url: "https://arxiv.org/abs/2410.15458" },
             { name: "TextToVideoSDPipeline (ModelScope)", id: "modelscope-pipeline", year: 2023, month: 8, url: "https://arxiv.org/abs/2308.06571" },
             { name: "LattePipeline", id: "latte-pipeline", year: 2024, month: 1, url: "https://arxiv.org/abs/2401.03048" },
+            { name: "Step-Video-T2V Pipeline", id: "step-video-pipeline", year: 2025, month: 2, url: "https://arxiv.org/abs/2502.10248" },
+            { name: "SkyReels-V2 Pipeline", id: "skyreels-v2-pipeline", year: 2025, month: 4, url: "https://arxiv.org/abs/2504.13074" },
+            { name: "MAGI-1 Pipeline: Autoregressive Video Generation", id: "magi1-pipeline", year: 2025, month: 5, url: "https://arxiv.org/abs/2505.13211" },
+            { name: "SANA-Video Pipeline", id: "sana-video-pipeline", year: 2025, month: 6, url: "https://github.com/NVlabs/Sana" },
+            { name: "SkyReels-V3 Pipeline", id: "skyreels-v3-pipeline", year: 2026, month: 1, url: "https://arxiv.org/abs/2601.17323" },
+            { name: "SkyReels-V4 Pipeline", id: "skyreels-v4-pipeline", year: 2026, month: 2, url: "https://arxiv.org/abs/2602.21818" },
+            { name: "SANA-Video 2.0 Pipeline", id: "sana-video2-pipeline", year: 2026, month: 7, url: "https://arxiv.org/abs/2607.21553" },
           ]
         },
         {
@@ -389,6 +445,12 @@ export const treeData = {
             { name: "ControlNet-XS (Lightweight ControlNet)", id: "controlnet-xs", year: 2023, month: 12, url: "https://arxiv.org/abs/2312.06573" },
             { name: "StableDiffusionGLIGENPipeline (Grounded Language-to-Image)", id: "gligen", year: 2023, month: 1, url: "https://arxiv.org/abs/2301.07093" },
             { name: "StableDiffusionAttendAndExcitePipeline", id: "attend-excite-pipeline", year: 2023, month: 1, url: "https://arxiv.org/abs/2301.13826" },
+            { name: "FluxControlPipeline (Structural Control)", id: "flux-control-pipeline", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "FluxControlNetPipeline", id: "flux-controlnet-pipeline", year: 2024, month: 8, url: "https://blackforestlabs.ai/" },
+            { name: "StableDiffusion3ControlNetPipeline", id: "sd3-controlnet-pipeline", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03206" },
+            { name: "ControlNet Union (Multi-condition single model)", id: "controlnet-union", year: 2024, url: "https://github.com/xinsir6/ControlNetPlus" },
+            { name: "InstantStyle: Free Lunch towards Style-Preserving", id: "instantstyle", year: 2024, month: 4, url: "https://arxiv.org/abs/2404.02733" },
+            { name: "OmniGen: Unified Image Generation", id: "omnigen", year: 2024, month: 9, url: "https://arxiv.org/abs/2409.11340" },
           ]
         },
         {
@@ -412,6 +474,7 @@ export const treeData = {
             { name: "MusicLDMPipeline (Text-to-Music)", id: "musicldm", year: 2023, month: 8, url: "https://arxiv.org/abs/2308.01546" },
             { name: "StableAudioPipeline (Stable Audio Open)", id: "stable-audio", year: 2024, month: 7, url: "https://arxiv.org/abs/2407.14358" },
             { name: "DanceDiffusionPipeline (Unconditional Audio)", id: "dance-diffusion", year: 2022, url: "https://huggingface.co/docs/diffusers/api/pipelines/dance_diffusion" },
+            { name: "Tango 2: Aligning Diffusion-based Text-to-Audio with Human Preference", id: "tango2", year: 2024, month: 4, url: "https://arxiv.org/abs/2404.09956" },
           ]
         },
         {
@@ -421,6 +484,9 @@ export const treeData = {
             { name: "ShapEPipeline (Text/Image-to-3D)", id: "shape", year: 2023, month: 5, url: "https://arxiv.org/abs/2305.02463" },
             { name: "ShapEImg2ImgPipeline (Image-to-3D)", id: "shape-img2img", year: 2023, month: 5, url: "https://arxiv.org/abs/2305.02463" },
             { name: "Zero-1-to-3: Zero-Shot One Image to 3D Object", id: "zero123", year: 2023, month: 3, url: "https://arxiv.org/abs/2303.11328" },
+            { name: "SV3D: Novel Multi-View Synthesis and 3D Generation", id: "sv3d", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.12008" },
+            { name: "TripoSR: Fast 3D Object Reconstruction from a Single Image", id: "triposr", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.02151" },
+            { name: "InstantMesh: Efficient 3D Mesh Generation", id: "instantmesh", year: 2024, month: 4, url: "https://arxiv.org/abs/2404.07191" },
           ]
         },
       ]
@@ -451,6 +517,9 @@ export const treeData = {
             { name: "AutoPipelineForInpainting (Auto inpainting routing)", id: "auto-inpaint", url: "https://huggingface.co/docs/diffusers/api/pipelines/auto_pipeline" },
             { name: "ModularPipeline (Base class for composable pipelines)", id: "modular-base", url: "https://huggingface.co/docs/diffusers/api/modular_pipelines" },
             { name: "PipelineBlock (Base class for pipeline blocks)", id: "pipeline-block", url: "https://huggingface.co/docs/diffusers/api/modular_pipelines" },
+            { name: "AutoPipelineForVideo (Auto video routing)", id: "auto-video", url: "https://huggingface.co/docs/diffusers/api/pipelines/auto_pipeline" },
+            { name: "InputStep (Pipeline input validation)", id: "input-step", url: "https://huggingface.co/docs/diffusers/api/modular_pipelines" },
+            { name: "OutputStep (Pipeline output formatting)", id: "output-step", url: "https://huggingface.co/docs/diffusers/api/modular_pipelines" },
           ]
         },
         {
@@ -479,6 +548,9 @@ export const treeData = {
             { name: "ONNX Runtime Loading / Export", id: "onnx-loading", url: "https://huggingface.co/docs/diffusers/optimization/onnx" },
             { name: "torch.load / state_dict Loading", id: "torch-load", url: "https://pytorch.org/docs/stable/generated/torch.load.html" },
             { name: "ModelMixin.from_pretrained (Component-level loading)", id: "model-mixin-load", url: "https://huggingface.co/docs/diffusers/api/models/overview" },
+            { name: "GGUF from_single_file (Quantized GGUF checkpoints)", id: "gguf-loading", url: "https://huggingface.co/docs/diffusers/quantization/gguf" },
+            { name: "Nunchaku Lite Loading (SVDQuant INT4 models)", id: "nunchaku-loading", year: 2024, url: "https://github.com/mit-han-lab/nunchaku" },
+            { name: "PipelineQuantizationConfig (Unified quantization loading)", id: "pipeline-quant-config", url: "https://huggingface.co/docs/diffusers/quantization/overview" },
           ]
         },
         {
@@ -493,6 +565,7 @@ export const treeData = {
             { name: "LoRA Merging and Composition", id: "lora-merge", url: "https://huggingface.co/docs/diffusers/using-diffusers/merge_loras" },
             { name: "PEFT: Parameter-Efficient Fine-Tuning Library", id: "peft", year: 2023, url: "https://github.com/huggingface/peft" },
             { name: "DoRA: Weight-Decomposed Low-Rank Adaptation", id: "dora", year: 2024, month: 2, url: "https://arxiv.org/abs/2402.09353" },
+            { name: "LoRA+: Efficient Low-Rank Adaptation of Large Models", id: "lora-plus", year: 2024, month: 2, url: "https://arxiv.org/abs/2402.12354" },
           ]
         },
         {
@@ -541,6 +614,8 @@ export const treeData = {
             { name: "Quanto (HuggingFace Quantization)", id: "quanto", year: 2024, url: "https://github.com/huggingface/optimum-quanto" },
             { name: "GPTQ: Accurate Post-Training Quantization", id: "gptq", year: 2022, month: 10, url: "https://arxiv.org/abs/2210.17323" },
             { name: "AWQ: Activation-aware Weight Quantization", id: "awq", year: 2023, month: 6, url: "https://arxiv.org/abs/2306.00978" },
+            { name: "Nunchaku / SVDQuant (INT4 via SVD decomposition)", id: "nunchaku-svdquant", year: 2024, month: 11, url: "https://arxiv.org/abs/2411.05007" },
+            { name: "PipelineQuantizationConfig (Unified quant config)", id: "pipeline-quant-config-q", url: "https://huggingface.co/docs/diffusers/quantization/overview" },
           ]
         },
         {
@@ -555,6 +630,9 @@ export const treeData = {
             { name: "ONNX Runtime Optimization", id: "onnx-opt", url: "https://huggingface.co/docs/diffusers/optimization/onnx" },
             { name: "OpenVINO Inference Optimization", id: "openvino", url: "https://huggingface.co/docs/diffusers/optimization/open_vino" },
             { name: "Core ML / Apple Silicon Optimization", id: "coreml", url: "https://huggingface.co/docs/diffusers/optimization/coreml" },
+            { name: "FP8 Layerwise Casting (Per-layer dynamic FP8)", id: "fp8-layerwise", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
+            { name: "Nunchaku NVFP4 / INT4 Inference Acceleration", id: "nunchaku-nvfp4", year: 2024, url: "https://github.com/mit-han-lab/nunchaku" },
+            { name: "torch.compile with fullgraph mode", id: "compile-fullgraph", url: "https://huggingface.co/docs/diffusers/optimization/torch2.0" },
           ]
         }
       ]
@@ -575,6 +653,8 @@ export const treeData = {
             { name: "enable_vae_tiling (Tile-based VAE decode for large images)", id: "vae-tiling", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
             { name: "torch.cuda.empty_cache (Manual GPU memory cleanup)", id: "empty-cache", url: "https://pytorch.org/docs/stable/generated/torch.cuda.empty_cache.html" },
             { name: "Gradient Checkpointing (Trade compute for memory)", id: "gradient-checkpoint", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
+            { name: "enable_layerwise_casting (FP8/FP16 per-layer precision)", id: "layerwise-casting", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
+            { name: "enable_group_offload (leaf_level — fine-grained offload)", id: "group-offload-leaf", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
           ]
         },
         {
@@ -588,6 +668,8 @@ export const treeData = {
             { name: "SDP Attention (Scaled Dot Product Attention)", id: "sdp-attention", url: "https://pytorch.org/docs/stable/generated/torch.nn.functional.scaled_dot_product_attention.html" },
             { name: "Layer Skipping Hooks", id: "layer-skip", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
             { name: "enable_xformers_memory_efficient_attention", id: "xformers-hook", url: "https://huggingface.co/docs/diffusers/optimization/xformers" },
+            { name: "SageAttention: Plug-and-play 8-Bit Attention Hook", id: "sage-attn-hook", year: 2024, url: "https://arxiv.org/abs/2410.02367" },
+            { name: "TeaCache: Training-free Attention Cache for Diffusion", id: "teacache-hook", year: 2024, url: "https://arxiv.org/abs/2411.19150" },
           ]
         },
         {
@@ -641,6 +723,7 @@ export const treeData = {
             { name: "IPAdapterScaleCutoffCallback", id: "ip-scale-callback", url: "https://huggingface.co/docs/diffusers/using-diffusers/callback" },
             { name: "Custom Step Logging / Progress Tracking", id: "step-logging", url: "https://huggingface.co/docs/diffusers/using-diffusers/callback" },
             { name: "Interrupt Callback (Early stopping)", id: "interrupt-callback", url: "https://huggingface.co/docs/diffusers/using-diffusers/callback" },
+            { name: "FreeU Callback (Free Lunch for UNet features)", id: "freeu-callback", year: 2023, month: 9, url: "https://arxiv.org/abs/2309.11497" },
           ]
         }
       ]
@@ -662,6 +745,8 @@ export const treeData = {
             { name: "AdamW Optimizer (Default for diffusion training)", id: "adamw", url: "https://pytorch.org/docs/stable/generated/torch.optim.AdamW.html" },
             { name: "Prodigy Optimizer (Adaptive learning rate)", id: "prodigy", year: 2023, url: "https://arxiv.org/abs/2306.06101" },
             { name: "8-bit Adam (bitsandbytes)", id: "adam8bit", year: 2022, url: "https://arxiv.org/abs/2110.02861" },
+            { name: "CAME: Confidence-guided Adaptive Memory Efficient Optimization", id: "came", year: 2023, month: 7, url: "https://arxiv.org/abs/2307.02047" },
+            { name: "AdaFactor: Adaptive Learning Rates with Sublinear Memory Cost", id: "adafactor", year: 2018, url: "https://arxiv.org/abs/1804.04235" },
           ]
         },
         {
@@ -692,6 +777,10 @@ export const treeData = {
             { name: "T2I-Adapter Training", id: "t2i-adapter-training", url: "https://huggingface.co/docs/diffusers/training/t2i_adapters" },
             { name: "InstructPix2Pix Training", id: "instruct-pix2pix-training", url: "https://huggingface.co/docs/diffusers/training/instructpix2pix" },
             { name: "SDXL Fine-tuning", id: "sdxl-training", url: "https://huggingface.co/docs/diffusers/training/sdxl" },
+            { name: "FLUX LoRA Fine-tuning", id: "flux-lora-training", url: "https://huggingface.co/docs/diffusers/training/flux" },
+            { name: "FLUX DreamBooth Fine-tuning", id: "flux-dreambooth", url: "https://huggingface.co/docs/diffusers/training/flux" },
+            { name: "Flow Matching Training (v-prediction for flows)", id: "flow-match-training", url: "https://huggingface.co/docs/diffusers/training/flow_matching" },
+            { name: "QLoRA Fine-tuning for Diffusion Models", id: "qlora-training", year: 2023, month: 5, url: "https://arxiv.org/abs/2305.14314" },
           ]
         },
         {
@@ -705,6 +794,8 @@ export const treeData = {
             { name: "DeepSpeed ZeRO Integration", id: "deepspeed", url: "https://huggingface.co/docs/accelerate/usage_guides/deepspeed" },
             { name: "Unconditional Image Generation Training", id: "unconditional-training", url: "https://huggingface.co/docs/diffusers/training/unconditional_training" },
             { name: "Wuerstchen Training (Stage C Decoder)", id: "wuerstchen-training", url: "https://huggingface.co/docs/diffusers/training/wuerstchen" },
+            { name: "GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection", id: "galore", year: 2024, month: 3, url: "https://arxiv.org/abs/2403.03507" },
+            { name: "Video-DPO: Omni-Preference Alignment for Video Diffusion", id: "video-dpo", year: 2025, month: 2, url: "https://arxiv.org/abs/2502.10248" },
           ]
         }
       ]
@@ -735,6 +826,9 @@ export const treeData = {
             { name: "Scaled Dot Product Attention (SDPA / PyTorch 2.0)", id: "sdpa", url: "https://huggingface.co/docs/diffusers/optimization/torch2.0" },
             { name: "torch.channels_last Memory Format", id: "channels-last", url: "https://pytorch.org/tutorials/intermediate/memory_format_tutorial.html" },
             { name: "Deterministic Generation (Generator seed control)", id: "deterministic", url: "https://huggingface.co/docs/diffusers/using-diffusers/reusing_seeds" },
+            { name: "torch.compile fullgraph mode (Full-graph compilation)", id: "compile-fullgraph-util", url: "https://huggingface.co/docs/diffusers/optimization/torch2.0" },
+            { name: "FP8 Layerwise Casting (Per-layer precision control)", id: "fp8-layerwise-util", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
+            { name: "Multi-GPU Inference (Device placement strategies)", id: "multi-gpu", url: "https://huggingface.co/docs/diffusers/optimization/memory" },
           ]
         },
         {
@@ -764,6 +858,8 @@ export const treeData = {
             { name: "Unstable / Bleeding-Edge Features", id: "bleeding-edge", url: "https://huggingface.co/docs/diffusers/api/experimental" },
             { name: "FreeInit: Bridging Initialization Gap in Video Diffusion", id: "freeinit", year: 2023, month: 12, url: "https://arxiv.org/abs/2312.07537" },
             { name: "FreeNoise: Tuning-Free Longer Video Diffusion", id: "freenoise", year: 2024, month: 10, url: "https://arxiv.org/abs/2310.15169" },
+            { name: "Diffusion Forcing: Next-token Prediction Meets Full-Sequence Diffusion", id: "diffusion-forcing", year: 2024, month: 7, url: "https://arxiv.org/abs/2407.01392" },
+            { name: "Rectified Consistency Models (rCM)", id: "rcm", year: 2025, url: "https://arxiv.org/abs/2410.18088" },
           ]
         }
       ]
