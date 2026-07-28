@@ -126,7 +126,7 @@ body {
 }
 
 .home-page {
-  padding: 52px 16px 16px;
+  padding: 52px 16px 80px;
 }
 
 .page-header {
@@ -226,9 +226,10 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-height: calc(100vh - 160px);
+  min-height: 700px;
   overflow: visible;
   animation: floatIn 0.8s ease 0.3s both;
+  padding-bottom: 40px;
 }
 
 /* Papers List (Leaf Page) */
@@ -390,13 +391,16 @@ body {
 
 /* Footer */
 .site-footer {
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 16px 0;
   font-size: 11px;
   color: rgba(255, 255, 255, 0.3);
   text-align: center;
   animation: fadeIn 1s ease 1s both;
   width: 100%;
+  position: relative;
+  z-index: 10;
+  background: #060612;
 }
 
 .site-footer a {
