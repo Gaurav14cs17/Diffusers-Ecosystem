@@ -39,13 +39,6 @@ function App() {
         <Route path="/category/:categoryId/:subId" element={<SubCategoryPage />} />
         <Route path="/category/:categoryId/:subId/:leafId" element={<LeafPage />} />
       </Routes>
-      <footer className="site-footer">
-        Built by <a href="https://github.com/Gaurav14cs17" target="_blank" rel="noopener noreferrer">Gaurav14cs17</a>
-        <span className="footer-sep">•</span>
-        <a href="https://github.com/huggingface/diffusers" target="_blank" rel="noopener noreferrer">HuggingFace Diffusers</a>
-        <span className="footer-sep">•</span>
-        <a href="https://huggingface.co/docs/diffusers" target="_blank" rel="noopener noreferrer">Documentation</a>
-      </footer>
     </HashRouter>
   );
 }
